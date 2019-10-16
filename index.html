@@ -1,0 +1,50 @@
+<!DOCTYPE = html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>JS exercise Aritmetic buttons</title>
+      
+        <script src = "script.js" defer></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    
+  <body>
+    
+  
+       <h3 id="Number Fields"></h3>
+
+      
+        <p> Input first number here: <input type="text" id= "num1" /> <br> </p>
+        <p> Input second number here:  <input type = "text" id ="num2"/> </p>
+<!--          Need to have one input field only, and probably store that data in an array-->
+          <div class ="container">
+      
+              <table id="operations">
+            <tr>
+                <td><input type = "button" onclick="multiplyBy()" value= "Multiply"> </td>
+                <td><input type = "button" onclick="divideBy()" value= "Divide"> </td>
+            </tr> 
+            <tr>
+                <td> <input type = "button" onclick="add()" value="Add"></td>
+                <td> <input type = "button" onclick="subtract()" value="Subtract"></td>
+            </tr>
+            <tr>
+               <td> <input type = "button" onclick="square()" value="Square"></td>
+               <td> <input type="button" onclick="insult()" value="Insult"></td>
+            </tr>
+              </table>  
+           
+     
+      
+      
+            <p> The result is: 
+            <span id ="ans"></span>
+            </p>
+      </div>
+    </body>
+</html>
+                  
+              
+      
+      
+
