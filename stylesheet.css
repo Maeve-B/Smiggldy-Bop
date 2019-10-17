@@ -1,6 +1,9 @@
 
     body {
+        background-image: url(bath-ducks-bathroom-bathtub-226597.jpg);
         background-color: #3fb399;
+        background-size: 75%;
+        background-repeat: no-repeat;
     }
   
     table {

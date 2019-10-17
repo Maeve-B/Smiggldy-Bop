@@ -2,49 +2,69 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>JS exercise Aritmetic buttons</title>
+  <title>Quackulator, for ducks</title>
       
         <script src = "script.js" defer></script>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     
   <body>
-    
+    <div id="wrapper">
   
-       <h3 id="Number Fields"></h3>
+       <h3 id="Quackulator"></h3>
 
-      
-        <p> Input first number here: <input type="text" id= "num1" /> <br> </p>
-        <p> Input second number here:  <input type = "text" id ="num2"/> </p>
-<!--          Need to have one input field only, and probably store that data in an array-->
           <div class ="container">
-      
-              <table id="operations">
-            <tr>
-                <td><input type = "button" onclick="multiplyBy()" value= "Multiply"> </td>
-                <td><input type = "button" onclick="divideBy()" value= "Divide"> </td>
-            </tr> 
-            <tr>
-                <td> <input type = "button" onclick="add()" value="Add"></td>
-                <td> <input type = "button" onclick="subtract()" value="Subtract"></td>
-            </tr>
-            <tr>
-               <td> <input type = "button" onclick="square()" value="Square"></td>
-               <td> <input type="button" onclick="insult()" value="Insult"></td>
-            </tr>
-              </table>  
-           
-     
-      
-      
-            <p> The result is: 
-            <span id ="ans"></span>
-            </p>
+          <form name = "form">
+              <div class="display">
+                  <input type="text" placeholder="0" name="displayResult">
+              </div>
+                 
+              <table id="Quackulator">
+                <tr>
+                <td id="display"> </td>
+                </tr>
+                    <tr>
+                      <td><input type = "button" name="One" onclick="doTheMaths(One.value)" value= "1"> </td>
+                      <td><input type = "button" name="Two" onclick="doTheMaths(Two.value)" value= "2"> </td>
+                      <td><input type = "button" name="One" onclick="doTheMaths(Three.value)" value= "3"> </td>
+                      <td><input type = "button" name="Add" onclick="doTheMaths(Add.value)" value= "+"> </td>
+                    </tr> 
+                  
+                    <tr>
+                        <td><input type = "button" name="Four" onclick="doTheMaths(Four.value)" value= "4"> </td>
+                        <td><input type = "button" name="Five" onclick="doTheMaths(Five.value)" value= "5"> </td>
+                        <td><input type = "button" name="Six" onclick="doTheMaths(Six.value)" value= "6"> </td>
+                        <td><input type = "button" name="Subtract" onclick="doTheMaths(Subtract.value)" value= "-"> </td>
+                    </tr>
+                  
+                    <tr>
+                        <td><input type = "button" name="Seven" onclick="doTheMaths(Seven.value)" value= "7"> </td>
+                        <td><input type = "button" name="Eight" onclick="doTheMaths(Eight.value)" value= "8"> </td>
+                        <td><input type = "button" name="Nine" onclick="doTheMaths(Nine.value)" value= "9"> </td>
+                        <td><input type = "button" name="Multiply" onclick="doTheMaths(Multiply.value)" value= "*"> </td>
+                    </tr>
+                  
+                    <tr>
+                        <td><input type = "button" name="Zero" onclick="doTheMaths(Zero.value)" value= "0"> </td>
+                        <td><input type = "button" name="Divide" onclick="doTheMaths(Divide.value)" value= "/"> </td>
+                        <td><input type = "button" name="Random Insult Generator" onclick="randomInsult" value= "displayResult.(call your random array)"> </td>
+                        <td><input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)"></td>
+                    </tr>
+              </table> 
+              </form>
+            
       </div>
+        </div>
     </body>
 </html>
 
-<-- Plan 
+              
+      
+      
+           
+     
+      
+    
                   
               
       
