@@ -1,22 +1,12 @@
 
-    body {
-        background-image: url(bath-ducks-bathroom-bathtub-226597.jpg);
-        background-color: #3fb399;
-        background-size: 75%;
-        background-repeat: no-repeat;
-    }
-  
-    table {
-        width: 100%;
-        border-color: #f4f4f4;
-    }
-    td {
-        width: 33%;
-    }
-    button {
-        width: 100%;
-        height: 70px;
-        font-size: 24px;
-        background-color: white;
-        border: none;
-    }
+body {
+    background-image: url(bath-duck-close-up-cute-592677.jpg);
+    box-shadow: 0 0 8px 8px black inset;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}

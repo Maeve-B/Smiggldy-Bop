@@ -1,32 +1,51 @@
 <!DOCTYPE = html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <title>Quackulator, for ducks</title>
-      
-        <script src = "script.js" defer></script>
-        <link rel="stylesheet" href="stylesheet.css">
-    </head>
+<meta charset="utf-8">
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src = "script.main1" defer></script>
+ <script src = "script.main2.js" defer></script>
+      <title>Quackulator, for ducks</title>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+</head>
     
-  <body>
-    <div id="wrapper">
-  
-       <h3 id="Quackulator"></h3>
+    <body class="w3-black"> 
+      <div class="w3-padding-large" id="main">
+      
+   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+          <h1 class="w3-jumbo"><span class="w3-hide-small"> Are You... </span> A Depressed Duck?</h1>
+    <p> Then Keep Scrolling...</p>
+<img src="D:/JavaScript Class Exercise files/JS Calculator/bath-duck-close-up-cute-592677.jpg" alt="ducko"  width="992" height="1108">
+  </header>
+          
+          
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Quackulator, for ducks</h2>
+    <hr style="width:200px" class="w3-opacity">
 
-          <div class ="container">
-          <form name = "form">
-              <div class="display">
-                  <input type="text" placeholder="0" name="displayResult">
-              </div>
-                 
-              <table id="Quackulator">
+      <p>Depressed ducko? Alienated avian? Wigged out wings? 
+       Welcome to the quackulator, for ducks. Here for can forget your webbed woes with the obvious solutions- calculation and random compliments from a computer. Counselling? Meh. Medication. No need! Don't beak the bank! Quackulate and compliment yourself to Duck Heaven. BREAD.
+          </p>
+      </div>
+        
+           <h3 class="w3-padding-16 w3-text-light-grey">Quackulator</h3>
+            <form name = "form">
+            <input type="text" placeholder="0" name="displayResult">
+                <table id="Quackulator">
                 <tr>
                 <td id="display"> </td>
                 </tr>
                     <tr>
                       <td><input type = "button" name="One" onclick="doTheMaths(One.value)" value= "1"> </td>
                       <td><input type = "button" name="Two" onclick="doTheMaths(Two.value)" value= "2"> </td>
-                      <td><input type = "button" name="One" onclick="doTheMaths(Three.value)" value= "3"> </td>
+                      <td><input type = "button" name="Three" onclick="doTheMaths(Three.value)" value= "3"> </td>
                       <td><input type = "button" name="Add" onclick="doTheMaths(Add.value)" value= "+"> </td>
                     </tr> 
                   
@@ -47,18 +66,44 @@
                     <tr>
                         <td><input type = "button" name="Zero" onclick="doTheMaths(Zero.value)" value= "0"> </td>
                         <td><input type = "button" name="Divide" onclick="doTheMaths(Divide.value)" value= "/"> </td>
-                        <td><input type = "button" name="Random Insult Generator" onclick="randomInsult" value= "displayResult.(call your random array)"> </td>
-                        <td><input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)"></td>
+                        <td><input type = "button" name="DuckCompliments" onclick="getElementById('message').innerHTML=compliments()"> </td>
+                        <td><input type="button" class="red" onClick="displayResult.value=eval(displayResult.value)" value="=" ></td>
                     </tr>
               </table> 
               </form>
-            
-      </div>
-        </div>
-    </body>
-</html>
-
+          </div>
+                
+<!--
+                        
+            <div class = "container">       
+              <div class ="row">
+                <div class="col-sm-4">
+                       <div id= "other">
+                    <p>Addingn this</p>
+                  </div>
+             
+                  
+            <div class = "container">    
+                <div class = "row">
+                <div class = "col-sm-4">
+                     <div id= "other1">
+                    <p>Addingn this</p>
+                    </div>
+-->
+<!--        </div>-->
+<!--              </div>-->
+        
+        
+    
+        </body>
+        </html>
               
+                
+<!--
+                why are my two bottom bits stacking on top of one antoher?
+                How do i get that script presenting my compliment?
+-->
+                
       
       
            
