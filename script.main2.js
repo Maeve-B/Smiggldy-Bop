@@ -4,8 +4,8 @@
     
    
 function randomCompliment(compliments) {
-return compliments[Math.floor(Math.random()*compliments.length)];
-    
+	return compliments[Math.floor(Math.random() * compliments.length)];
+}
 
 var compliments = ["Great Duck", "Hot Wings", "Beak Chic", "Quack My Bitch Up", "Webbed Heaven"];
 
